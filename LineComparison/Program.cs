@@ -41,13 +41,17 @@ namespace LineComparison
             double length2 = Math.Sqrt(c);
             Console.WriteLine("Length of the line is" + length2);
 
-            if (length1 == length2)
+            if (length1.CompareTo(length2) == 0)
             {
                 Console.WriteLine("Both the lines are equal");
             }
+            else if (length1.CompareTo(length2) > 0)
+            {
+                Console.WriteLine("Line1 is greater than line2");
+            }
             else
             {
-                Console.WriteLine("Both the lines are not equal");
+                Console.WriteLine("Line1 is smaller than line2");
             }
         }
     }
